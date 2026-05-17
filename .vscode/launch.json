@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Receiver",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Receiver",
+      "program": "${workspaceFolder}/src/SystemMonitorReceiver/bin/Debug/net8.0/SystemMonitorReceiver.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/SystemMonitorReceiver",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    {
+      "name": "Debug Agent",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Agent",
+      "program": "${workspaceFolder}/src/SystemMonitorAgent/bin/Debug/net8.0/SystemMonitorAgent.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/SystemMonitorAgent",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "env": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Both Services",
+      "configurations": ["Debug Receiver", "Debug Agent"],
+      "stopAll": true
+    }
+  ]
+}

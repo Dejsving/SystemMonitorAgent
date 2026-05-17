@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SystemMonitorAgent/SystemMonitorAgent.csproj" />
+    <Project Path="src/SystemMonitorReceiver/SystemMonitorReceiver.csproj" />
+      <Project Path="src/SystemMonitor.Shared/SystemMonitor.Shared.csproj" />`n  </Folder>
+</Solution>

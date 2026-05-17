@@ -1,0 +1,42 @@
+{
+  "collectedAtUtc": "2026-05-16T10:00:00+00:00",
+  "hostname": "WORKSTATION-01",
+  "ipAddresses": [
+    "10.0.0.25",
+    "192.168.1.25"
+  ],
+  "windowsVersion": "Microsoft Windows 10.0.22631",
+  "uptimeSeconds": 86400,
+  "cpuUsagePercent": 22.13,
+  "memory": {
+    "totalBytes": 17179869184,
+    "usedBytes": 8589934592
+  },
+  "disks": [
+    {
+      "name": "C:\\",
+      "availableFreeSpaceBytes": 80530636800,
+      "totalSizeBytes": 255013683200
+    }
+  ],
+  "runningProcesses": [
+    {
+      "id": 1234,
+      "name": "explorer"
+    },
+    {
+      "id": 4321,
+      "name": "svchost"
+    }
+  ],
+  "requiredProcesses": [
+    {
+      "name": "explorer",
+      "isRunning": true
+    },
+    {
+      "name": "notepad",
+      "isRunning": false
+    }
+  ]
+}
